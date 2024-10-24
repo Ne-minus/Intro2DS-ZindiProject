@@ -11,11 +11,14 @@ The dataset consists of multiple files detailing hackathons and competitions, us
 
 ### Main data features and problems
 **Class disbalance**  
-![](target_imbalance.png)  
 The "0" class is significantly larger than the "1" class, which can lead to overfitting, challenges in evaluation (since standard accuracy metrics are unsuitable), and longer training times.  
+![](target_imbalance.png)   
+  
 **Outliers**  
-![](outliers.png)  
 Outliers in the data can increase error rates by affecting the loss function, distort statistics like the mean and standard deviation, and lead to overfitting by capturing noise instead of true patterns. Additionally, the data contains many categorical features and unnecessary information, further complicating analysis.  
+![](outliers.png)  
+  
 **Correlations**  
-![](correlation.png)  
 Some features show a high correlation with each other, and the target variable is fairly highly correlated with certain features. This suggests potential multicollinearity and key relationships between the target and specific predictors.  
+![](correlation.png)  
+  
