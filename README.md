@@ -41,3 +41,15 @@ The complex model, that can find deeper connections . We use gradient boostings.
 | CompPart, Sub                 | 0.998     | 0.998  | 0.997    | 0.976     |
 | CompPart, Sub, Comment        | 0.999     | 0.999  | 0.999    | 0.986     |
 | CompPart, Sub, Comment, Disc  | 1.000     | 1.000  | 1.000    | 1.000     |
+
+### Advanced approach
+Avoided using highly correlated features (e.g., **CompPart = 0.920**), focusing on a broader range of attributes.
+Employed grid search and cross-validation for hyperparameter optimization.  
+
+Utilized multiple models:
+  1) XGBoost
+  2) 2LightGBM
+  3) Logistic regression with L2 regularization
+  4) Logistic regression with L1 regularization (used for feature extraction)
+
+![](results_advanced.png)
