@@ -1,4 +1,3 @@
-# Intro2DS-ZindiProject
 
 ## Table of Contents
 1. [Task Description](#task-description)
@@ -17,9 +16,9 @@
 
 
 ## Task Description
-Problem: Predict if a user will be active on Zindi next month by their participation in competitions, submissions, or forums.
-Importance: Helps Zindi enhance user engagement, optimize services, and increase platform efficiency.
-ML Contribution: Analyzes user behavior to predict future activity, reducing costs and improving user experience.
+**Problem:** Predict if a user will be active on Zindi next month by their participation in competitions, submissions, or forums.  
+**Importance:** Helps Zindi enhance user engagement, optimize services, and increase platform efficiency.  
+**ML Contribution:** Analyzes user behavior to predict future activity, reducing costs and improving user experience.  
 
 ## About data
 
