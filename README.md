@@ -40,7 +40,7 @@ The complex model, that can find deeper connections . We use gradient boostings.
 | CompPart                      | 0.966     | 0.983  | 0.974    | 0.833     |
 | CompPart, Sub                 | 0.998     | 0.998  | 0.997    | 0.976     |
 | CompPart, Sub, Comment        | **0.999**    | **0.999**  | **0.999**   | **0.986**     |
-| CompPart, Sub, Comment, Disc  | _1.000     | 1.000  | 1.000    | 1.000     _|
+| CompPart, Sub, Comment, Disc  | _1.000_     | _1.000_  | _1.000_    | _1.000_     |
 
 ### Advanced approach
 Avoided using highly correlated features (e.g., **CompPart = 0.920**), focusing on a broader range of attributes.
@@ -53,3 +53,7 @@ Utilized multiple models:
   4) Logistic regression with L1 regularization (used for feature extraction)
 
 ![](results_advanced.png)
+
+## Analysis of the result  
+**The baseline model, which depended only on highly correlated features, outperformed more sophisticated methods like boosting and logistic regression.** **However, the boosting models also showed very good results despite the removal of the most important feature ('CompPart').**  
+The baseline model's advantage primarily stemmed from the synergistic effect of top correlated features. The simple method of feature selection was more effective than the automated approach in complex models. Notably, excluding the pivotal 'CompPart' feature in advanced models was intended to assess the impact of other features. Furthermore, the implementation of L1 regularization in logistic regression failed to bring the anticipated enhancements, leading to the weakest performance.
