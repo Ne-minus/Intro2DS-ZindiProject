@@ -21,4 +21,23 @@ Outliers in the data can increase error rates by affecting the loss function, di
 **Correlations**  
 Some features show a high correlation with each other, and the target variable is fairly highly correlated with certain features. This suggests potential multicollinearity and key relationships between the target and specific predictors.  
 ![](correlation.png)  
-  
+
+## Approach
+
+### Baseline  
+The simple and fast model to test some hypothesis/ We use logistic regression, a valuable tool for rapidly assessing hypotheses in binary classification tasks. 
+
+### Advanced approach  
+The complex model, that can find deeper connections . We use gradient boostings.
+
+## Results
+
+### Our baseline
+| Features            | Precision | Recall | F1 Score | AUC Score |
+|---------------------|-----------|--------|----------|-----------|
+| CompPart            | 0.966     | 0.983  | 0.974    | 0.833     |
+| CompPart, Sub       | 0.998     | 0.998  | 0.997    | 0.976     |
+| CompPart                      | 0.966     | 0.983  | 0.974    | 0.833     |
+| CompPart, Sub                 | 0.998     | 0.998  | 0.997    | 0.976     |
+| CompPart, Sub, Comment        | 0.999     | 0.999  | 0.999    | 0.986     |
+| CompPart, Sub, Comment, Disc  | 1.000     | 1.000  | 1.000    | 1.000     |
