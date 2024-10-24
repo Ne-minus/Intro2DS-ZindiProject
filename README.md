@@ -39,8 +39,8 @@ The complex model, that can find deeper connections . We use gradient boostings.
 | CompPart, Sub       | 0.998     | 0.998  | 0.997    | 0.976     |
 | CompPart                      | 0.966     | 0.983  | 0.974    | 0.833     |
 | CompPart, Sub                 | 0.998     | 0.998  | 0.997    | 0.976     |
-| CompPart, Sub, Comment        | 0.999     | 0.999  | 0.999    | 0.986     |
-| CompPart, Sub, Comment, Disc  | 1.000     | 1.000  | 1.000    | 1.000     |
+| CompPart, Sub, Comment        | **0.999**    | **0.999**  | **0.999**   | **0.986**     |
+| CompPart, Sub, Comment, Disc  | _1.000     | 1.000  | 1.000    | 1.000     _|
 
 ### Advanced approach
 Avoided using highly correlated features (e.g., **CompPart = 0.920**), focusing on a broader range of attributes.
